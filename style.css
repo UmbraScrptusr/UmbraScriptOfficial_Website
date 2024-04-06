@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --black:#16161d;
+    --light-black:#242430;
+    --white:#dedede;
+    --blue: #6868ff;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Raleway", monospace;
+}
+
+header{
+    background-color: var(--light-black);
+    margin-left: -10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 30px #636379; 
+    transition: box-shadow 0.3s; 
+}
+
+header:not(:hover) { 
+    box-shadow: 0px 0px 10px var(--light-black); 
+}
+
+header button{
+    background-color: var(--light-black);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    transition: 300ms;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header button:hover{
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 0px 0px 15px var(--white);
+    transform: translateY(-7px) scale(1.1);
+}
+
+header button:active{
+    background-color: var(--blue);
+    box-shadow: 0px 0px 15px var(--blue);
+    transform: translateY(-4px) scale(1.05);
+}
+
+header p{
+    font-size: 30px;
+}
+
+main{
+    margin-top: 200px;
+    text-align: center;
+}
+
+#about_section{
+    margin-bottom: 50%;
+    margin-left: 10%;
+    margin-right: 50%;
+    text-align: left;
+}
+
+#about_section h1{
+    font-size: 70px;
+}
+
+#about_section p, #projects_section p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 40px;
+}
+#projects_section{
+    margin-bottom: 50%;
+}
+b, a{
+    color: #6868ff;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover{
+    color: var(--white);
+    text-shadow: 0px 0px 10px var(--white);
+}
+
+a:active{
+    color: var(--blue);
+    text-shadow: 0px 0px 5px var(--blue);
+}
+h1{text-shadow: 0px 0px 4px var(--blue);}
+h2{text-shadow: 0px 0px 4px var(--white);}
+.dd{
+    margin-bottom: 150px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.black{
+    color:#0000;
+    margin-bottom:50px;
+}
