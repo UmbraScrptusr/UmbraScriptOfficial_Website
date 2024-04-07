@@ -6,7 +6,9 @@
     --white:#dedede;
     --blue: #6868ff;
 }
-
+h1,h2,h3,h4,p{
+    cursor:default;
+}
 body{
     background-color: var(--black);
     color: var(--white);
@@ -24,7 +26,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    box-shadow: 0px 0px 30px #636379; 
+    box-shadow: 0px 0px 50px #636379; 
     transition: box-shadow 0.3s; 
 }
 
@@ -116,4 +118,27 @@ h2{text-shadow: 0px 0px 4px var(--white);}
 .black{
     color:#0000;
     margin-bottom:50px;
+}
+
+@media screen and (max-width:600px) {
+    header{
+        height:60px;
+    }
+    header p, p{
+        font-size: 15px;
+    }
+    p{
+        margin-left:0px;
+        margin-right:0px
+    }
+    h1{
+        font-size:23px;
+        margin-left:0px;
+    }
+    h2{
+        font-size:21px;
+    }
+    h3{
+        font-size:17px;
+    }
 }
