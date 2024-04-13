@@ -16,3 +16,6 @@ document.getElementById("FaQ_button").addEventListener("click", function() {
 document.getElementById("home_button").addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+document.getElementById("Login_button").addEventListener("click", function(){
+    window.location.href="login.html";
+});
